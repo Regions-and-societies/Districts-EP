@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Regions and Societies: Districts</name>
+    <author>archdukejim</author>
+    <packageId>RegionsAndSocieties.Districts</packageId>
+    <url>https://github.com/Regions-and-societies/Districts-EP</url>
+    <modVersion>0.1.0</modVersion>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <!-- No hard dependency on a Regions and Societies core: the two editions
+             (RegionsAndSocieties.Core on Map Mode Framework, RegionsAndSocieties.CoreRP2 on
+             Realistic Planets 2) are mutually exclusive and modDependencies cannot express
+             "either of" - declaring one falsely flags the other edition's users with a
+             missing-dependency warning. The mod entry class warns in-game instead when no
+             edition is loaded. -->
+    </modDependencies>
+    <loadAfter>
+        <li>RegionsAndSocieties.Core</li>
+        <li>RegionsAndSocieties.CoreRP2</li>
+        <li>NozoMe.MapModeFramework</li>
+        <li>koth.RealisticPlanets2</li>
+    </loadAfter>
+    <description>Version: v0.1.0 (Expansion Pack)
+
+An expansion pack for Regions and Societies. It simulates the inside of a world tile.
+
+Core divides the planet into regions and gives each one a population. This adds the layer underneath: every settlement is a cluster of districts, each district is one local map of ground, and each district is a place in its own right with its own people and its own job.
+
+Features:
+- Districts as real places: a settlement is a hex cluster of 1 to 61 local maps, and you can see which is which.
+- Enclaves: xenotypes and wealth cluster by district instead of averaging across the whole region, so a city has quarters.
+- A living skyline: settlements build districts one at a time as they grow, and empty districts fall to ruin when people leave.
+- Each district does one job - farming, forestry, mining, quarrying, manufacturing, trade, garrison, or no specialty at all - and what the settlement produces is the sum of them.
+- Special structures that change what a district is worth to its settlement.
+- Unrest that accumulates where people are repressed, crowded or occupied, published for other mods to act on.
+
+Requires: Regions and Societies (either the standard or the Realistic Planets 2 edition). Core supplies the geometry and the economic sector vocabulary this reads; everything above is added here.
+    </description>
+</ModMetaData>
