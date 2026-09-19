@@ -23,7 +23,7 @@ Everything in the left column is public API, documented in Core's Developer's Gu
 
 ## Scale, in short
 
-A world tile is about 6 km across and 23.4 km² of ground, derived from RimWorld's own travel clock: 3300 ticks to cross a tile at 2500 ticks an hour is 1.32 hours of marching. At the default 250x250 map that is **374 local maps per tile**, and the ratio follows whatever map size the player actually uses.
+A world tile is about 6 km across and 23.4 km² of ground, derived from RimWorld’s own travel clock: 3300 ticks to cross a tile at 2500 ticks an hour is 1.32 hours of marching. A district is one **fixed** piece of that ground, 0.0625 km² — the area a 250x250 map covers — which makes **374 districts to a tile**. It is deliberately not tied to the map size a player runs: doing that made the settlement ladder mean different things for different people, and put a city on two thirds of its tile at 500x500.
 
 Settlements occupy a hex cluster of those maps:
 
